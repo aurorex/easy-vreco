@@ -40,5 +40,21 @@
   var buttonRoute = document.querySelector('#route');
   buttonRoute.addEventListener('click', searchRoute);
 
+  var buttonFound = document.querySelector('#found');
+  buttonFound.addEventListener('click', function () {
+    // var output = document.querySelector('#my-ubication');
+
+    var localization = function localization(position) {
+      var latitude = position.coords.latitude;
+      var longitude = position.coords.longitude;
+    };
+
+    var error = function error() {
+      alert('no se pudo encontrar tu ubicación');
+    };
+
+    navigator.geolocation.getCurrentPosition(localization, error);
+  });
+
   google.maps.event.addDomListener(window, 'load', initialize);
 })(jQuery);
