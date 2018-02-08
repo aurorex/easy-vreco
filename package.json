@@ -1,0 +1,27 @@
+{
+  "name": "easy-vreco",
+  "version": "1.0.0",
+  "description": "Aplicación web que muestra la ruta de un punto a otro por medio de la geolocalización",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "scripts": {
+    "build": "babel --presets env src -d public/js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LizbethFP/easy-vreco.git"
+  },
+  "keywords": [
+    "geolocalización"
+  ],
+  "author": "Aurora Vasquez y Lizbeth Félix",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LizbethFP/easy-vreco/issues"
+  },
+  "homepage": "https://github.com/LizbethFP/easy-vreco#readme"
+}
