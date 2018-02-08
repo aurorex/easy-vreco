@@ -42,12 +42,16 @@
 
   var buttonFound = document.querySelector('#found');
   buttonFound.addEventListener('click', function () {
-    // var output = document.querySelector('#my-ubication');
+
+    var output = document.querySelector('#my-ubication');
 
     var localization = function localization(position) {
       var latitude = position.coords.latitude;
       var longitude = position.coords.longitude;
+
+      var imgUrl = 'https://maps.googleapis.com/maps/api/staticmap?center=' + latitude + ',' + longitude + '&size=600x300&makers=color:red%7C' + latitude + longitude + 'key=AIzaSyDyTMwJFSm3tf0ajjiOhzqqu4J2AKkGFFY';
     };
+    output.innerHTML = '<img src"' + imgUrl + '">';
 
     var error = function error() {
       alert('no se pudo encontrar tu ubicación');
